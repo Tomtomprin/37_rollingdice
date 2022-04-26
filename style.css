@@ -1,0 +1,172 @@
+div img {
+    animation-name: OpacityChange;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    /* transition: all 0.5s; */
+    /*▲アニメーションの開始と終了時*/
+    /*none→指定なし。初期値。*/
+    /*forwards→元の状態に戻らずアニメーション最後の状態を維持*/
+    /*backwards→アニメーションの最初の状態に戻る*/
+    /*both→backwardsとforwardsの両方の状態を適用*/
+    animation-duration: 0.3s;
+    /*▲アニメーション変化時間*/
+    /* animation-iteration-count:infinite; */
+    /*▲ループさせる*/
+    animation-timing-function: linear;
+    /*▲進行具合*/
+    /*ease→初期値：開始時と終了時が緩やかに変化*/
+    /*ease-in→開始時は緩やかに変化、終了に近づくと早く変化。ease-outは逆*/
+    /*ease-in-out→開始時と終了時は、かなり緩やかに変化*/
+    /*linear→開始から終了まで一定に変化・・・など。他にも、複数あり*/
+    /*▲アニメーションの開始を遅らせる*/
+    animation-direction: normal;
+    /*アニメーションの再生の向きを順方向、逆方向、前後反転のいずれにするかを決める*/
+    /*normal→初期値：普通方向の再生で動きを繰り返す*/
+    /*reverse→逆方向の再生で動きを繰り返す*/
+    /*alternate→奇数回では普通方向、偶数回では逆方向の再生で動きを繰り返す*/
+    /*alternate-reverse→毎回逆方向の再生、奇数回では逆方向、偶数回では普通方向*/
+}
+
+.t01 {
+    animation-delay: 0.28s;
+}
+
+.t02 {
+    animation-delay: 0.56s;
+}
+
+.t03 {
+    animation-delay: 0.84s;
+}
+
+.t04 {
+    animation-delay: 1.12s;
+}
+
+.t05 {
+    animation-delay: 1.4s;
+}
+
+.t06 {
+    animation-delay: 1.68s;
+}
+
+.t07 {
+    animation-delay: 1.96s;
+}
+
+.t08 {
+    animation-delay: 2.24s;
+}
+
+.t09 {
+    animation-delay: 2.52s;
+}
+
+.t10 {
+    animation-delay: 2.8s;
+}
+
+.t11 {
+    animation-delay: 3.08s;
+}
+
+.t12 {
+    animation-delay: 3.36s;
+}
+
+.t13 {
+    animation-delay: 3.64s;
+}
+
+.t14 {
+    animation-delay: 3.92s;
+}
+
+.t15 {
+    animation-delay: 4.2s;
+}
+
+.t16 {
+    animation-delay: 4.48s;
+}
+
+.t17 {
+    animation-delay: 5.61s;
+}
+
+.t18 {
+    animation-delay: 5.74s;
+}
+
+.t19 {
+    animation-delay: 5.87s;
+}
+
+.t20 {
+    animation-delay: 6s;
+}
+
+.t21 {
+    animation-delay: 6.13s;
+}
+
+.t22 {
+    animation-delay: 6.26s;
+}
+
+.t23 {
+    animation-delay: 7.46s;
+}
+
+@keyframes OpacityChange {
+    0% {
+        opacity: 0%
+    }
+
+    99% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%
+    }
+}
+
+
+
+
+
+/* ↓形式整えるための設定（今回の肝の部分ではない） */
+div img {
+
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 60px);
+    height: auto;
+    max-height: 600px;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto auto auto;
+    padding: 100px 30px;
+    width: 100%;
+    height: 600px;
+}
